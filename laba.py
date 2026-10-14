@@ -1,8 +1,6 @@
 def problem_1(x):
-    print('введите ваше число')
     return x**2//2
 def problem_2(a):
-    print('введите два числа')
     if float(a[0])>0 and float(a[1])>0:
         return('I')
     if float(a[0])<0 and float(a[1])>0:
@@ -12,5 +10,5 @@ def problem_2(a):
     if float(a[0])>0 and float(a[1])<0:
         return('IV')
 
-print(problem_1(int(input())))
-print(problem_2(input().split()))
+print(problem_1(int(input('ВВЕДИТЕ ВАШЕ ЧИСЛО: '))))
+print(problem_2(input('ВВЕДИТЕ ВАШИ ЧИСЛА: ').split()))
