@@ -1,5 +1,5 @@
 def problem_1(x):
-    return x**2//2
+    return 'итоговая площадь равна:', x**2/2
 def problem_2(a):
     if float(a[0])>0 and float(a[1])>0:
         return('I')
@@ -11,4 +11,4 @@ def problem_2(a):
         return('IV')
 
 print(problem_1(int(input('ВВЕДИТЕ ВАШЕ ЧИСЛО: '))))
-print(problem_2(input('ВВЕДИТЕ ВАШИ ЧИСЛА: ').split()))
+print('исходная точка в четверти под номером:', problem_2(input('ВВЕДИТЕ ВАШИ ЧИСЛА: ').split()))
