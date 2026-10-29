@@ -40,4 +40,4 @@ while True:
         print('введите новые числа')
 print(f'итог работы программы {problem_2(x, n)}')
 
-print(f'Ответ на задачу по физике: {problem_3()}')
+print(f'Ответ на задачу по физике: {round(problem_3(), 2)}')
