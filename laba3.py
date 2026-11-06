@@ -69,11 +69,28 @@ while True:
 if len(words) == 0:
     print("Вы не ввели ни одного слова.")
 else:
-    print(f"\nИсходный массив слов: {words}")
+    print(f"Исходный массив слов: {words}")
     print(f"Слова с двумя и более буквами 'а': {problem_2(words)}")
 
-numbers = []
-print('Вводите числа по одному, (Enter на пустой строке – завершить ввод).')
+a = []
+print("Вводите числа по одному (Enter на пустой строке — завершить ввод).")
 while True:
-    numbers = int(input())
+    s = input("Число: ")
+    if len(s) == 0:
+        break
+    try:
+        x = float(s)
+    except ValueError:
+        print("Ошибка: введите число.")
+        continue
+    if x == int(x):
+        x = int(x)
+    a.append(x)
+if len(a) == 0:
+    print("Вы не ввели ни одного числа.")
+else:
+    print(f"Исходный список: {a}")
+    mxn, total = problem_3(a)
+    print(f"Номер максимального по модулю элемента: {mxn + 1}")
+    print(f"Сумма элементов после первого положительного: {total}")
     
