@@ -44,3 +44,30 @@ def problem_3(a):
         for i in range(j + 1, len(a)):
             sum_plus += a[i]
     return mxn, sum_plus
+    
+a = input('Введите непустую строку: ')
+while len(a)==0:
+    a = input('Введите НЕПУСТУЮ строку: ')
+print(f'Исходная строка: {a}')
+print(f'строка без чисел меж скобками: {problem_1(a)}')
+
+words = []
+print("Вводите слова по одному (Enter на пустой строке — завершить ввод).")
+while True:
+    word = input("Слово: ")
+    if len(word) == 0:
+        break
+    has_space = False
+    for ch in word:
+        if ch == ' ':
+            has_space = True
+            break
+    if has_space:
+        print("Ошибка: слово не может содержать пробел. Повторите ввод.")
+        continue
+    words.append(word)
+if len(words) == 0:
+    print("Вы не ввели ни одного слова.")
+else:
+    print(f"\nИсходный массив слов: {words}")
+    print(f"Слова с двумя и более буквами 'а': {problem_2(words)}")
