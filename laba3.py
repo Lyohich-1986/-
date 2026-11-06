@@ -52,7 +52,7 @@ print(f'Исходная строка: {a}')
 print(f'строка без чисел меж скобками: {problem_1(a)}')
 
 words = []
-print("Вводите слова по одному (Enter на пустой строке — завершить ввод).")
+print("Вводите слова по одному (Enter на пустой строке – завершить ввод).")
 while True:
     word = input("Слово: ")
     if len(word) == 0:
@@ -71,3 +71,9 @@ if len(words) == 0:
 else:
     print(f"\nИсходный массив слов: {words}")
     print(f"Слова с двумя и более буквами 'а': {problem_2(words)}")
+
+numbers = []
+print('Вводите числа по одному, (Enter на пустой строке – завершить ввод).')
+while True:
+    numbers = int(input())
+    
