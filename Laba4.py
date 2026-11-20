@@ -12,3 +12,21 @@ def problem1(n):
     return m, k
 
 def problem2(n):
+    person = {
+       "имя": input("Введите имя: "),
+       "пол": input("Введите пол: "),
+       "индивидуальный номер": input("Введите индивидуальный номер: ")
+   }
+    while True:
+    try:
+        age = int(input("Введите возраст: "))
+        if age < 0:
+            print("Возраст не может быть отрицательным!")
+            continue
+        person["возраст"] = age
+        break
+    except ValueError:
+        print("Ошибка! Введите число.")
+    for k in person:
+        print(k, ':', person[k])
+#main()
