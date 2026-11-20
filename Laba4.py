@@ -29,4 +29,16 @@ def problem2(n):
         print("Ошибка! Введите число.")
     for k in person:
         print(k, ':', person[k])
+    print(f'примерная дата рождения:{2026 - age}')
 #main()
+while True:
+    try:
+        n = int(input('введите размер матрицы'))
+        if n > 0:
+            break
+        else:
+            print(Число должно быть положительным)
+    except ValueError:
+        print("Введите число")
+print(f'элементы верхнего треугольника:{problem1(n)[0]}, элементы нижнего треугольника:{problem1(n)[1]}')
+problem2()
